@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="235dp"
+    android:background="@mipmap/fondoheader"
+
+    android:orientation="vertical"
+    android:paddingLeft="15dp"
+    android:paddingTop="42dp"
+    android:paddingRight="30dp"
+
+    android:theme="@style/ThemeOverlay.AppCompat.Dark">
+
+        <!-- Aquí puedes agregar el contenido dentro del CardView, como ImageView, TextView, etc. -->
+        <ImageView
+            android:id="@+id/imag_grup_perfil"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginStart="20dp"
+            android:padding="2dp"
+            android:src="@mipmap/perfil" />
+
+
+    <TextView
+        android:id="@+id/nombre"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="1dp"
+        android:text="Mario Pérez Bautista"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:textSize="18dp"
+        android:textStyle="bold" />
+    <TextView
+        android:id="@+id/email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="1dp"
+        android:text="mperez@itsoeh.edu.mx"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:textSize="15dp"
+        />
+
+</LinearLayout>

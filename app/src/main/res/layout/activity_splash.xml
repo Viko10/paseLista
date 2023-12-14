@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".splashventana">
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:ignore="MissingConstraints"
+    >
+    <ImageView
+
+        android:layout_width="350dp"
+        android:layout_height="350dp"
+        android:layout_marginTop="180dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginEnd="25dp"
+        android:src="@mipmap/logopaselista"
+        tools:ignore="MissingConstraints"
+         />
+
+    <TextView
+        android:layout_width="130dp"
+        android:layout_height="25dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginStart="140dp"
+        android:layout_marginEnd="135dp"
+        android:text="Version 1.0.0"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        tools:ignore="MissingConstraints"
+        />
+</LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

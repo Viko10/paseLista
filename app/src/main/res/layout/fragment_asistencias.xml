@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:layout_gravity="center"
+    tools:context=".asistencias">
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/btnGuardarAsis"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/fab_margin"
+        android:backgroundTint="@color/secondary"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:srcCompat="@android:drawable/ic_menu_save"
+        tools:ignore="MissingConstraints" />
+
+
+
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_height="248dp"
+        android:gravity="center"
+        android:background="@drawable/top_background"
+        tools:ignore="MissingConstraints" >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="-50dp"
+            android:layout_marginStart="10dp"
+            android:orientation="horizontal"
+            android:layout_marginEnd="15dp"
+            >
+            <androidx.cardview.widget.CardView
+
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_weight="5"
+                android:layout_marginTop="10dp"
+                android:layout_margin="5dp"
+                android:elevation="20dp"
+                app:cardCornerRadius="20dp"
+                android:background="@drawable/edi_text_background"
+                >
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginStart="8dp"
+                    android:src="@mipmap/buscar"
+
+                    />
+
+                <EditText
+                    android:id="@+id/lisgrup_txtBusca"
+                    android:layout_width="330dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="50dp"
+                    android:background="@android:color/transparent"
+                    android:hint="Buscar Alumno"
+                    android:padding="5sp" />
+            </androidx.cardview.widget.CardView>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:ignore="MissingConstraints" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView"
+        android:layout_width="wrap_content"
+        android:layout_height="160dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="120dp"
+        android:layout_marginEnd="15dp"
+        app:cardCornerRadius="35dp"
+        app:cardElevation="20dp"
+        android:layout_weight="10"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="120dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="290dp"
+            android:orientation="vertical">
+
+            <!-- ImageView para "Editar" -->
+            <ImageView
+                android:id="@+id/asisten_reg"
+                android:layout_width="60dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="7dp"
+                android:src="@mipmap/iconfech1" />
+
+
+            <ImageView
+                android:id="@+id/imgguardar"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_marginStart="7dp"
+                android:layout_marginTop="5dp"
+                android:contentDescription="Lupa"
+                android:src="@mipmap/calendar" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="37dp"
+            android:layout_height="27dp"
+            android:layout_marginStart="309dp"
+            android:layout_marginTop="105dp"
+            android:background="#eceff1"
+            android:backgroundTint="#eceff1"
+            >
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/exam_btn_fecha"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="0dp"
+                android:background="#eceff1"
+                android:textStyle="bold"
+                android:text="Fecha"
+                android:textColor="@color/black"
+                android:textSize="7dp"
+                tools:ignore="MissingConstraints" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="289dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            >
+
+
+            <LinearLayout
+                android:layout_width="288dp"
+                android:layout_height="100dp"
+                android:orientation="horizontal"
+                android:padding="16dp">
+
+                <ImageView
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_marginTop="20dp"
+                    android:src="@mipmap/materiaicon"
+                     />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="80dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:layout_marginStart="15dp">
+
+
+
+                    <TextView
+                        android:id="@+id/nombreasistencia"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Inteligencia Artificial"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+                        <TextView
+
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Creditos: "
+                            android:textSize="18sp"
+                            android:textStyle="bold"/>
+
+                        <TextView
+                            android:id="@+id/creditosasistencia"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text=" 403"
+                            android:textSize="18sp"
+                            android:textStyle="bold"/>
+
+
+                    </LinearLayout>
+
+
+                    <TextView
+                        android:id="@+id/carreraasistencia"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Sistemas Computacionale"
+                        android:textSize="15sp"
+                        android:textStyle="bold"/>
+
+
+                </LinearLayout>
+
+                <!-- LinearLayout vertical para "Editar" y "Lupa" -->
+
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="160dp"
+                android:layout_height="30dp"
+                android:orientation="horizontal"
+                android:layout_marginStart="30dp"
+                android:layout_gravity="center"
+                >
+                <CheckBox
+                    android:id="@+id/selccinatodo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="15dp"
+                    android:text="Todos asistierón "
+                    android:theme="@style/radioAsisto"/>
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="460dp"
+        app:layout_constraintEnd_toEndOf="@+id/cardView"
+        app:layout_constraintStart_toStartOf="@+id/cardView"
+        app:layout_constraintTop_toBottomOf="@+id/cardView">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/listAlumnos"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbarStyle="insideOverlay"
+            app:layoutManager="androidx.recyclerview.widget.StaggeredGridLayoutManager"
+            />
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    tools:context=".listaClases">
+
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="120dp"
+        android:background="@drawable/top_background"
+        tools:ignore="MissingConstraints" >
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_marginStart="10dp"
+            android:orientation="horizontal"
+            android:layout_marginEnd="15dp"
+            >
+            <androidx.cardview.widget.CardView
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_weight="5"
+
+                android:layout_margin="5dp"
+                android:elevation="20dp"
+                app:cardCornerRadius="20dp"
+                android:background="@drawable/edi_text_background"
+                >
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginTop="10dp"
+                   android:layout_marginStart="8dp"
+                    android:src="@mipmap/buscar"
+
+                    />
+
+                <EditText
+                    android:id="@+id/lisgrup_txtBusca"
+                    android:layout_width="330dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="50dp"
+                    android:background="@android:color/transparent"
+                    android:hint="Buscar Grupo"
+                    android:padding="5sp" />
+            </androidx.cardview.widget.CardView>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".YourActivity">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/list_grup_lista"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbarStyle="insideOverlay"
+            app:layoutManager="androidx.recyclerview.widget.StaggeredGridLayoutManager" />
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/btn_crear_grupo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/secondary"
+            android:src="@drawable/add"
+            app:layout_anchor="@id/list_grup_lista"
+            android:layout_marginTop="510dp"
+            android:layout_marginStart="300dp"
+
+        />
+
+
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+
+
+
+</LinearLayout>

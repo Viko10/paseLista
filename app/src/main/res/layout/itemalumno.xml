@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="110dp"
+    android:backgroundTint="#eceff1"
+    android:layout_margin="8dp"
+    app:cardCornerRadius="5dp"
+    app:cardElevation="4dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="16dp">
+
+        <ImageView
+            android:id="@+id/itemest_imv_genero"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="1dp"
+            android:src="@mipmap/fotoalumno"
+            android:contentDescription="Género" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="2"
+            android:orientation="horizontal"
+            android:layout_marginStart="16dp">
+
+            <TextView
+                android:id="@+id/itemalumno_nombre"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Victor"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/itemalumno_APP"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="7dp"
+                android:text="Cruz"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/itemalumno_APM"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="7dp"
+                android:text="Cruz"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:textStyle="bold"/>
+
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:orientation="horizontal">
+        <!-- RadioButtons para el Registro de Asistencia -->
+        <RadioGroup
+            android:id="@+id/radioGroupAsistencia"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="8dp">
+
+            <RadioButton
+                android:id="@+id/radioButtonAsistio"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:theme="@style/radioAsisto"
+                android:text="Asistió" />
+
+            <RadioButton
+                android:id="@+id/radioButtonFalta"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:theme="@style/radioFalto"
+                android:layout_marginStart="8dp"
+                android:text="Falta" />
+
+            <RadioButton
+                android:id="@+id/radioButtonRetardo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:theme="@style/radioRetardo"
+                android:layout_marginStart="8dp"
+                android:text="Retardo" />
+
+            <RadioButton
+                android:id="@+id/radioButtonJustificante"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:theme="@style/radioJust"
+                android:text="Justificante" />
+        </RadioGroup>
+
+        <!-- Botón de Registrar Asistencia -->
+
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#DDDDDD"
+        android:layout_marginTop="16dp" />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#DDDDDD"
+        android:layout_marginTop="95dp" />
+
+
+</androidx.cardview.widget.CardView>

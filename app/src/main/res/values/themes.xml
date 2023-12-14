@@ -1,0 +1,57 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.PaseLista" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/primary</item>
+        <item name="colorPrimaryVariant">@color/purple_700</item>
+        <item name="colorOnPrimary">@color/black</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">#929090</item>
+        <item name="colorSecondaryVariant">@color/teal_700</item>
+        <item name="colorOnSecondary">@color/black</item>
+        <!--Status bar color. -->
+        <item name="android:statusBarColor" tools:targetApi="l">@color/primary</item>
+        <!-- Customize your theme here. -->
+    </style>
+
+    <style name="Theme.PaseLista.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="Theme.PaseLista.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+    <!-- Base application theme. -->
+    <style name="Base.Theme.PaseLista" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Customize your light theme here. -->
+        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+    </style>
+
+    <style name="radioAsisto" parent="Theme.AppCompat.Light">
+        <item name="colorAccent">@color/color_seleccionado1</item>
+
+        <item name="colorPrimary">@color/color_seleccionado1</item>
+
+    </style>
+    <style name="radioFalto" parent="Theme.AppCompat.Light">
+        <item name="colorAccent">@color/color_seleccionado2</item>
+        <item name="colorPrimary">@color/color_seleccionado2</item>
+    </style>
+
+    <style name="radioRetardo" parent="Theme.AppCompat.Light">
+        <item name="colorAccent">@color/color_seleccionado3</item>
+        <item name="colorPrimary">@color/color_seleccionado3</item>
+    </style>
+    <style name="radioJust" parent="Theme.AppCompat.Light">
+        <item name="colorAccent">@color/color_seleccionado4</item>
+        <item name="colorPrimary">@color/color_seleccionado4</item>
+    </style>
+
+    <style name="Theme.PaseLista.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+    <style name="CustomDatePickerDialog" parent="Theme.AppCompat.Light.Dialog">
+        <!-- Customize your theme here. -->
+        <item name="colorAccent">@color/yourAccentColor</item>
+        <!-- You can also define text color, header background color, etc. -->
+    </style>
+
+
+</resources>

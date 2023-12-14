@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@id/inicio">
+    <fragment
+        android:id="@+id/inicio"
+        android:name="com.itsoeh.vcruz.paselista.Inicio"
+        android:label="Inicio"
+        tools:layout="@layout/fragment_inicio" />
+    <fragment
+        android:id="@+id/listaClases"
+        android:name="com.itsoeh.vcruz.paselista.listaClases"
+        android:label="Mis Grupos"
+        tools:layout="@layout/fragment_lista_clases" >
+        <action
+            android:id="@+id/action_listaClases_to_crearGrupo"
+            app:destination="@id/crearGrupo" />
+        <action
+            android:id="@+id/action_listaClases_to_asistencias"
+            app:destination="@id/asistencias" />
+    </fragment>
+    <fragment
+        android:id="@+id/asistencias"
+        android:name="com.itsoeh.vcruz.paselista.asistencias"
+        android:label="Asistencias"
+        tools:layout="@layout/fragment_asistencias" >
+        <action
+            android:id="@+id/action_asistencias_to_asisReg"
+            app:destination="@id/asisReg" />
+    </fragment>
+    <fragment
+        android:id="@+id/perfilDocente"
+        android:name="com.itsoeh.vcruz.paselista.perfilDocente"
+        android:label="Perfil"
+        tools:layout="@layout/fragment_perfil_docente" />
+    <fragment
+        android:id="@+id/soporte"
+        android:name="com.itsoeh.vcruz.paselista.soporte"
+        android:label="Sobre Nosotros"
+        tools:layout="@layout/fragment_soporte" />
+    <fragment
+        android:id="@+id/crearGrupo"
+        android:name="com.itsoeh.vcruz.paselista.crearGrupo"
+        android:label="Grupos"
+        tools:layout="@layout/fragment_crear_grupo" />
+    <fragment
+        android:id="@+id/asisReg"
+        android:name="com.itsoeh.vcruz.paselista.asisReg"
+        android:label="Asistencias Registradas"
+        tools:layout="@layout/fragment_asis_reg" />
+</navigation>

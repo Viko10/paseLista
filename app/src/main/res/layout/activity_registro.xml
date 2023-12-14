@@ -1,0 +1,393 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".registro">
+
+<RelativeLayout
+
+    android:layout_width="match_parent"
+    android:layout_height="850dp">
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="348dp"
+        android:background="@drawable/top_background"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" >
+
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="397dp"
+            android:layout_height="150dp"
+            android:layout_marginEnd="190dp"
+            android:gravity="center_horizontal"
+            android:text="Crea cuenta Nueva"
+            android:textColor="#DCD8D8"
+            android:textSize="25dp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="MissingConstraints" />
+    </LinearLayout>
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView"
+        android:layout_width="match_parent"
+        android:layout_height="780dp"
+        app:cardCornerRadius="30dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="30dp"
+        app:cardElevation="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginTop="1dp"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="90dp"
+                android:layout_height="50dp"
+                android:src="@mipmap/newcuen"
+                android:scaleType="centerCrop"
+                android:padding="20dp">
+            </ImageView>
+            <TextView
+
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:id="@+id/txt_Regresar_login"
+                android:gravity="center"
+                android:text="¿Ya te registraste? Iniciá sesión acá."
+                android:textSize="10dp"
+                android:textStyle="bold"
+                android:textColor="@color/primary"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:text="Clave profesional o matricula"
+                android:textSize="15dp"
+                android:textStyle="bold"
+                />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="38dp"
+                android:orientation="horizontal"
+                android:layout_marginVertical="4dp"
+                android:background="@drawable/edi_text_background"
+                >
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@mipmap/mat"
+                    android:layout_marginStart="8dp"
+                    android:layout_gravity="center"
+                    />
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableTint="@color/cajas"
+                    android:background="@color/cajas"
+                    android:layout_marginEnd="15dp"
+                    android:layout_marginTop="8dp"
+                    android:id="@+id/reg_txt_mat"
+
+                    />
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:text="Nombre"
+                android:textSize="15dp"
+                android:textStyle="bold"
+                />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="38dp"
+                android:orientation="horizontal"
+                android:layout_marginVertical="4dp"
+                android:background="@drawable/edi_text_background"
+                >
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@mipmap/username"
+                    android:layout_marginStart="8dp"
+                    android:layout_gravity="center"
+                    />
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableTint="@color/cajas"
+                    android:background="@color/cajas"
+                    android:layout_marginEnd="15dp"
+                    android:layout_marginTop="8dp"
+                    android:id="@+id/reg_txt_Nombre"
+
+                    />
+
+            </LinearLayout>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:text="Apellido Paterno"
+                android:textSize="15dp"
+                android:textStyle="bold"
+                />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="38dp"
+                android:orientation="horizontal"
+                android:layout_marginVertical="4dp"
+                android:background="@drawable/edi_text_background"
+                >
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@mipmap/iconoman"
+                    android:layout_marginStart="8dp"
+                    android:layout_gravity="center"
+                    />
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableTint="@color/cajas"
+                    android:background="@color/cajas"
+                    android:layout_marginEnd="15dp"
+                    android:layout_marginTop="8dp"
+                    android:id="@+id/reg_txt_App"
+
+                    />
+
+
+            </LinearLayout>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:text="Apellido Materno"
+                android:textSize="15dp"
+                android:textStyle="bold"
+                />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="38dp"
+                android:orientation="horizontal"
+                android:layout_marginVertical="4dp"
+                android:background="@drawable/edi_text_background"
+                >
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@mipmap/mater"
+                    android:layout_marginStart="8dp"
+                    android:layout_gravity="center"
+                    />
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:drawableTint="@color/cajas"
+                    android:background="@color/cajas"
+                    android:layout_marginEnd="15dp"
+                    android:layout_marginTop="8dp"
+                    android:id="@+id/reg_txt_Apm"
+
+                    />
+
+            </LinearLayout>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:text="Correo Electronico"
+                android:textSize="15dp"
+                android:textStyle="bold"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="38dp"
+                android:orientation="horizontal"
+                android:layout_marginVertical="10dp"
+                android:background="@drawable/edi_text_background"
+                >
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@mipmap/correo"
+                    android:layout_marginStart="8dp"
+                    android:layout_gravity="center"
+                    />
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/reg_txt_email"
+                    android:drawableTint="@color/cajas"
+                    android:background="@color/cajas"
+                    android:layout_marginEnd="15dp"
+                    android:layout_marginTop="8dp"
+
+                    />
+
+            </LinearLayout>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:text="Fecha de Nacimiento"
+                android:textSize="15dp"
+                android:textStyle="bold"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="38dp"
+                android:orientation="horizontal"
+                android:layout_marginVertical="10dp"
+                android:background="@drawable/edi_text_background"
+                >
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@mipmap/cumple"
+                    android:layout_marginStart="8dp"
+                    android:layout_gravity="center"
+                    />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:id="@+id/reg_txt_fecnac"
+                    android:drawableTint="@color/cajas"
+                    android:text="Seleccione su fecha"
+                    android:background="@color/cajas"
+                    android:layout_marginEnd="15dp"
+                    android:layout_marginTop="8dp"
+
+                    />
+
+            </LinearLayout>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="25dp"
+                android:text="Contraseña"
+                android:textSize="15dp"
+                android:textStyle="bold"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="38dp"
+                android:orientation="horizontal"
+                android:layout_marginVertical="10dp"
+                android:background="@drawable/edi_text_background"
+                >
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@mipmap/password1"
+                    android:layout_marginStart="8dp"
+                    android:layout_gravity="center"
+                    />
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/reg_txt_pass"
+                    android:drawableTint="@color/cajas"
+                    android:background="@color/cajas"
+                    android:layout_marginEnd="15dp"
+                    android:layout_marginTop="8dp"
+                    android:inputType="textPassword"
+                    />
+
+            </LinearLayout>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:text="Confirme Contraseña"
+                android:textSize="15dp"
+                android:textStyle="bold"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="38dp"
+                android:orientation="horizontal"
+                android:layout_marginVertical="10dp"
+                android:background="@drawable/edi_text_background"
+                >
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@mipmap/password1"
+                    android:layout_marginStart="8dp"
+                    android:layout_gravity="center"
+                    />
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/reg_txt_pass2"
+                    android:drawableTint="@color/cajas"
+                    android:background="@color/cajas"
+                    android:layout_marginEnd="15dp"
+                    android:layout_marginTop="8dp"
+                    android:inputType="textPassword"
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center"
+                >
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Guardar"
+                    android:layout_gravity="end"
+                    android:textColor="@color/white"
+                    android:id="@+id/reg_btn_guardarDatos"
+                    />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+
+
+</RelativeLayout>
+</ScrollView>

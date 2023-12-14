@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/inicio"
+            android:icon="@mipmap/home"
+            android:title="Inicio" />
+
+        <item
+            android:id="@+id/perfilDocente"
+            android:icon="@drawable/user"
+            android:title="Perfil" />
+        <item
+            android:id="@+id/listaClases"
+            android:icon="@drawable/grups"
+            android:title="Mis Grupos"
+            />
+        <item
+            android:id="@+id/soporte"
+            android:icon="@drawable/soporte"
+            android:title="Conócenos"
+            />
+        <item
+            android:id="@+id/close"
+            android:icon="@mipmap/closesesion"
+            android:title="Cerrar Sesion"
+            />
+    </group>
+</menu>

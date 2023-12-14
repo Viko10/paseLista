@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="140dp"
+    android:backgroundTint="#eceff1"
+    android:layout_margin="8dp"
+    app:cardCornerRadius="35dp"
+    app:cardElevation="4dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="16dp">
+
+        <ImageView
+            android:id="@+id/itemest_imv_genero"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="20dp"
+            android:src="@mipmap/materias"
+            android:contentDescription="Género" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="120dp"
+            android:layout_weight="2"
+            android:orientation="vertical"
+            android:layout_marginStart="16dp">
+
+            <TextView
+                android:id="@+id/itemgrup_txt_cv_materia"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Clave: 12345"
+                android:textSize="18sp"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/itemgrup_txt_nombreMat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Nombre de Materia"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <TextView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Creditos: "
+                    android:textSize="18sp"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:id="@+id/itemgroup_creditos"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=" 403"
+                    android:textSize="18sp"
+                    android:textStyle="bold"/>
+
+
+            </LinearLayout>
+
+
+            <TextView
+                android:id="@+id/itemgroup_txt_carrera"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Carrera: Ingeniería Informática"
+                android:textSize="15sp"
+                android:textStyle="bold"/>
+
+
+        </LinearLayout>
+
+        <!-- LinearLayout vertical para "Editar" y "Lupa" -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="99dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="5dp"
+            android:orientation="vertical">
+
+            <!-- ImageView para "Editar" -->
+            <ImageView
+                android:id="@+id/itemest_verList"
+                android:layout_width="38dp"
+                android:layout_height="38dp"
+                android:contentDescription="Editar"
+                android:src="@mipmap/iconasiiss" />
+
+            <ImageView
+                android:id="@+id/itemgroup_edt"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginStart="9dp"
+                android:layout_marginTop="5dp"
+                android:contentDescription="Lupa"
+                android:src="@mipmap/iconedit" />
+
+            <!-- ImageView para "Lupa" -->
+            <ImageView
+                android:id="@+id/itemgrop_info"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="8dp"
+                android:contentDescription="Lupa"
+                android:src="@mipmap/infoicon" />
+
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#DDDDDD"
+        android:layout_marginTop="16dp" />
+
+</androidx.cardview.widget.CardView>
